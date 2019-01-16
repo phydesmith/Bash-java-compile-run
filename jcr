@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+javaExtension=".java"
+file=$2$javaExtnsion
+
+javac -d $1 $2$javaExtension 
+
+java -classpath $1 $2
